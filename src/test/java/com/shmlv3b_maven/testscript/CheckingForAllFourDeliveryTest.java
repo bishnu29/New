@@ -719,7 +719,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
-		
+		/*
 		homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
 		String expectedMsg = "Your parcel has been successfully added to your shopping basket";
 		String actualMsg = homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
@@ -727,7 +727,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
 		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified",true);
 		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
-		
+		*/
 		
 		
 		homeOrOfficeObjects.clickOn_termsAndConditionCheckBox();
