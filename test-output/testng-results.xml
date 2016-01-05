@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87874" started-at="2016-01-05T10:44:01Z" finished-at="2016-01-05T10:45:29Z">
+  <suite name="Default suite" duration-ms="90324" started-at="2016-01-05T10:47:37Z" finished-at="2016-01-05T10:49:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87874" started-at="2016-01-05T10:44:01Z" finished-at="2016-01-05T10:45:29Z">
+    <test name="Default test" duration-ms="90324" started-at="2016-01-05T10:47:37Z" finished-at="2016-01-05T10:49:07Z">
       <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest">
-        <test-method status="PASS" signature="configBfrCls()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configBfrCls" is-config="true" duration-ms="8450" started-at="2016-01-05T16:14:01Z" finished-at="2016-01-05T16:14:09Z">
+        <test-method status="PASS" signature="configBfrCls()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configBfrCls" is-config="true" duration-ms="7706" started-at="2016-01-05T16:17:37Z" finished-at="2016-01-05T16:17:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBfrCls -->
-        <test-method status="PASS" signature="configBfrMtd()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configBfrMtd" is-config="true" duration-ms="13759" started-at="2016-01-05T16:14:09Z" finished-at="2016-01-05T16:14:23Z">
+        <test-method status="PASS" signature="configBfrMtd()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configBfrMtd" is-config="true" duration-ms="13971" started-at="2016-01-05T16:17:44Z" finished-at="2016-01-05T16:17:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBfrMtd -->
-        <test-method status="FAIL" signature="checkingTheBpostDeliveryPointMethod()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="checkingTheBpostDeliveryPointMethod" duration-ms="63593" started-at="2016-01-05T16:14:23Z" finished-at="2016-01-05T16:15:26Z">
+        <test-method status="FAIL" signature="checkingTheBpostDeliveryPointMethod()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="checkingTheBpostDeliveryPointMethod" duration-ms="66579" started-at="2016-01-05T16:17:58Z" finished-at="2016-01-05T16:19:05Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingTheBpostDeliveryPointMethod -->
-        <test-method status="FAIL" signature="configAfterMtd(org.testng.ITestResult)[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configAfterMtd" is-config="true" duration-ms="0" started-at="2016-01-05T16:15:26Z" finished-at="2016-01-05T16:15:26Z">
+        <test-method status="FAIL" signature="configAfterMtd(org.testng.ITestResult)[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="configAfterMtd" is-config="true" duration-ms="0" started-at="2016-01-05T16:19:05Z" finished-at="2016-01-05T16:19:05Z">
           <params>
             <param index="0">
               <value>
@@ -153,7 +153,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAfterMtd -->
-        <test-method status="SKIP" signature="tearDownAfterCls()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="tearDownAfterCls" is-config="true" duration-ms="0" started-at="2016-01-05T16:15:29Z" finished-at="2016-01-05T16:15:29Z">
+        <test-method status="SKIP" signature="tearDownAfterCls()[pri:0, instance:com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest@282ba1e]" name="tearDownAfterCls" is-config="true" duration-ms="0" started-at="2016-01-05T16:19:07Z" finished-at="2016-01-05T16:19:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterCls -->
