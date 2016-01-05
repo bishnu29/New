@@ -29,8 +29,10 @@ public class BpostDeliverypointObjects extends WebDriverCommonLib{
 		
 		selectBpostDeliveryPoint.click();
 		Thread.sleep(3000);
+		
 		clickOnTheWeightDropDown.click();
 		selectTheValue0_2kgTab.click();
+		
 		Thread.sleep(3000);
 		
 	}

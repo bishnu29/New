@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]" parallel="none">
-  <test name="Test(failed)" parallel="none" preserve-order="false">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)" preserve-order="true">
     <classes>
       <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest">
         <methods>
           <include name="checkingTheBpostDeliveryPointMethod"/>
-          <include name="checkingReceiverChooseMethod"/>
-          <include name="checkingTheHomeOrOfficeDeliveryMethod"/>
           <include name="configBfrMtd"/>
           <include name="configBfrCls"/>
-          <include name="checkingTheParcelLockerDeliveryMethod"/>
+          <include name="configAfterMtd"/>
         </methods>
-      </class>
+      </class> <!-- com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest -->
     </classes>
-  </test>
-</suite>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
