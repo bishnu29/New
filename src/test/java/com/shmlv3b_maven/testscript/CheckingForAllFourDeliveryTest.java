@@ -115,6 +115,8 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	@Test(priority=1)
 	public void checkingTheHomeOrOfficeDeliveryMethod() throws InterruptedException {
 		
+	/*	
+		
 		try{
 			
 		//report = new ExtentReports("D:\\SeleniumProjectTestReport\\shlm_v3b_testreport\\report1.html",true);
@@ -204,7 +206,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		String receiverName = verifyParcelObjects.verifyingTheOrderedParcelByReceiverName();
 		Assert.assertEquals(receiverName, Constants.name,"The Receiver name is not matching when we cross check under completed tab of My shipment page");
 		logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page");
-		*/
+		
 		
 		
 		ogonepageObjects.clickOnTheDownloadPDFButton();
@@ -252,7 +254,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 		
 		
-		/* Get the BARCODE from the Myshipment tab and store in the barCode variable*/
+		 Get the BARCODE from the Myshipment tab and store in the barCode variable
 		
 		String barCode = verifyParcelObjects.getTheBarCodeFromMyshipmentPage();
 		logger.log(LogStatus.INFO, "The BARCODE from the web is :: <span style='font-weight:bold;'>"+barCode+"<span>");
@@ -275,6 +277,199 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 			
 			Assert.fail();
 		}
+		
+		*/
+		
+		
+		
+		
+		
+		
+       try{
+
+		logger = report.startTest(Thread.currentThread().getStackTrace()[1].getMethodName());
+		//logger.assignCategory("1st flow - Home or Office Delivery Method ");
+		
+		logger.log(LogStatus.INFO, "<span style='font-weight:bold;'> Navigating to The URL :: "+Driver.driver.getCurrentUrl()+"</span>");
+		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+		
+		homeOrOfficeObjects.clickOnSendTab();
+		logger.log(LogStatus.INFO, "<span style='font-weight:bold;'> The Send Button is Clicked. </span>");
+		homeOrOfficeObjects.performOperationOn_createLabel_method();
+		logger.log(LogStatus.INFO, "Started filling the fields in the Create Label page . . . ");
+		homeOrOfficeObjects.nextButton();
+		logger.log(LogStatus.INFO, "Clicked on Next button");
+		waitForPageToLoad();
+		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+		
+		homeOrOfficeObjects.performOperationOn_destinationPage();
+		logger.log(LogStatus.INFO, "Started filling the fields in the Destination  page . . . ");
+		homeOrOfficeObjects.nextButton();
+		logger.log(LogStatus.INFO, "Clicked on Next button");
+		waitForPageToLoad();
+		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+		
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();
+		homeOrOfficeObjects.performOperationOn_senderPage();
+		logger.log(LogStatus.INFO, "Started filling the fields in the Sender  page . . . ");
+		waitForPageToLoad();
+		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+		
+		/*
+		homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
+		logger.log(LogStatus.INFO, "Successfully fetched the message after adding the parcel to the cart");
+		String expectedMsg = "Your parcel has been added to your shopping basket";
+		String actualMsg = homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
+		System.out.println("The Message which is showing in the Overview page is :: "+homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded());
+		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
+		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified");
+		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
+		*/
+		
+		
+		homeOrOfficeObjects.clickOn_termsAndConditionCheckBox();
+		logger.log(LogStatus.INFO, "Clicked Terms and conditions Check box");
+		
+		homeOrOfficeObjects.clickOn_payButton();
+		logger.log(LogStatus.INFO, "Clicked on Pay Button");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	ogonepageObjects.clickOn_visaCard();
+	logger.log(LogStatus.INFO, "Clicked On the Visa Card");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	ogonepageObjects.enterTheDetailsInTheCardDetailsPage();
+	logger.log(LogStatus.INFO, "Entering the Payment Card Details");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	Driver.driver.navigate().refresh();
+	logger.log(LogStatus.INFO, "The page is Refreshing");
+	waitForPageToLoad();
+	
+	/*
+	verifyParcelObjects.clickOnMyShipmenttab();
+	logger.log(LogStatus.INFO, "Clicked on My Shipment Tab");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	verifyParcelObjects.clickOnCompletedTab();
+	logger.log(LogStatus.INFO, "Clicked on the Completed task under My Shipment page ");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	
+	
+	String receiverName = verifyParcelObjects.verifyingTheOrderedParcelByReceiverName();
+	Assert.assertEquals(receiverName, Constants.name,"The Receiver name is not matching when we cross check under completed tab of My shipment page");
+	logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page");
+	*/
+	
+	
+	ogonepageObjects.clickOnTheDownloadPDFButton();
+	logger.log(LogStatus.INFO, " The Download button is clicked ");
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	//Thread.sleep(6000);
+	//Assert.assertTrue(isFileDownloaded(Constants.downloadPath, "bpost-label.pdf"), "Failed to download Expected document");
+	//waitForPageToLoad();
+	Assert.assertTrue(isFileDownloaded_Ext(Constants.downloadPath, ".pdf"), "Failed to download document which has extension .pdf");
+	logger.log(LogStatus.PASS, "Yes, The Downloaded File is of .pdf extension ");
+	//waitForPageToLoad();
+	
+	Thread.sleep(6000);
+	
+	File getLatestFile = getLatestFilefromDir(Constants.downloadPath);
+	logger.log(LogStatus.INFO, "Downloaded File Path is :: <span style='font-weight:bold;'> " +getLatestFile+" </span>");
+    String fileName = getLatestFile.getName();
+    logger.log(LogStatus.INFO, " Latest Downloaded File Name is ::  <span style='font-weight:bold;'> " +fileName+"</span>");
+	Reporter.log("After downloading, the latest file name is :: "+fileName,true);
+	Thread.sleep(4000);
+	//Assert.assertTrue(fileName.equals("bpost-label.pdf"), "Downloaded file name is not matching with expected file name");
+	//Assert.assertTrue(fileName.equals("bpost-label.pdf"), "Downloaded file name is not matching with expected file name");
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	//Assert.assertTrue(verifyPDFContent(downloadedFilePath, "323257001657391007"),"This BARCODE is not matching with the PDF ");
+	
+	
+	
+	
+	
+	
+	verifyParcelObjects.clickOnMyShipmenttab();
+	logger.log(LogStatus.INFO, "Clicked on My Shipment Tab");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	verifyParcelObjects.clickOnCompletedTab();
+	logger.log(LogStatus.INFO, "Clicked on the Completed task under My Shipment page ");
+	
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
+	
+	
+	
+	/* Get the BARCODE from the Myshipment tab and store in the barCode variable*/
+	
+	String barCode = verifyParcelObjects.getTheBarCodeFromMyshipmentPage();
+	logger.log(LogStatus.INFO, "The BARCODE from the web is :: <span style='font-weight:bold;'>"+barCode+"<span>");
+	Reporter.log("The BARCODE from the web is :: "+barCode,true);
+	Thread.sleep(4000);
+	Assert.assertTrue(verifyPDFContent(Constants.downloadPath,barCode,fileName)," This BARCODE is not matching with the PDF ");
+	logger.log(LogStatus.PASS, "The Web Bar code is successfully matching with the Downloaded PDF");
+	
+	waitForPageToLoad();
+	logger.log(LogStatus.INFO, "Wait for the Page to Load");
+	
+	
+	
+	String receiverName = verifyParcelObjects.verifyingTheOrderedParcelByReceiverName();
+	System.out.println("The Receiver's name in the My shipment page is :: "+receiverName);
+	Assert.assertEquals(receiverName, Constants.name,"The Receiver name is not matching when we cross check under completed tab of My shipment page");
+	logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page <span class='label success'>Success</span>");
+	
+	
+	
+	
+	//driver.findElement(By.linkText("PDF flyer")).click();
+	}catch(Throwable t){
+		Assert.fail();
+	}
+	
+		
+		
 		
 		
 		
