@@ -707,14 +707,13 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
-		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();  /* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
-		logger.log(LogStatus.INFO, "clicked on new Sender Radio Button");
+
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
-		logger.log(LogStatus.INFO, "Started filling the Sender page fields");
+		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
 		homeOrOfficeObjects.performOperationOn_senderPage();
-		logger.log(LogStatus.INFO, "Sender Page is Done");
-		
-		
+		logger.log(LogStatus.INFO, "Sender page is Done");
 		
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
