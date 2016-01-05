@@ -475,7 +475,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	@Test(priority=2)
+	//@Test(priority=2)
 	public void checkingTheParcelLockerDeliveryMethod() throws InterruptedException{
 		
 		try{
@@ -673,7 +673,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-    //@Test(priority=3)
+    @Test(priority=3)
 	public void checkingTheBpostDeliveryPointMethod() throws InterruptedException{
 		
 	    try{
