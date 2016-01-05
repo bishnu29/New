@@ -112,7 +112,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	}
 
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	public void checkingTheHomeOrOfficeDeliveryMethod() throws InterruptedException {
 		
 	/*	
@@ -475,7 +475,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	public void checkingTheParcelLockerDeliveryMethod() throws InterruptedException{
 		
 		try{
@@ -516,7 +516,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
 		
-		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
 		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
 		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
@@ -528,7 +528,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	
 		
-		
+		/*
 		homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
 		String expectedMsg = "Your parcel has been successfully added to your shopping basket";
 		String actualMsg = homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
@@ -536,7 +536,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
 		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified",true);
 		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
-		
+		*/
 		//Thread.sleep(4000);
 		
 		
@@ -872,7 +872,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	 @Test(priority=4)
+	 //@Test(priority=4)
 	 public void checkingReceiverChooseMethod() throws InterruptedException{
 		
 	 try{
@@ -943,13 +943,11 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 			}
 			
 			//Driver.driver.get("D:\\BpostShmlv3bReport\\report.html");
-			try{
+			
 				
 			loginObjects.logOutTheApplication();
 			waitForPageToLoad();
-		   }catch(Throwable t){
-			   logger.log(LogStatus.INFO, " No such Element ");
-		   }
+		   
 			
     		
     		
