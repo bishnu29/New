@@ -80,6 +80,8 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 		selectTheValue0_2kgTab.click();
 		//Thread.sleep(4000);
 		
+		
+		
 		wait.until(ExpectedConditions.visibilityOf(checkBoxBlock));
 		
 		
