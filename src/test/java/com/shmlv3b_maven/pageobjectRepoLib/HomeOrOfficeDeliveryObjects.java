@@ -1,10 +1,17 @@
 package com.shmlv3b_maven.pageobjectRepoLib;
 
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.shmlv3b_maven.genericLib.Constants;
@@ -66,7 +73,7 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 		
 		
 		homeOrOfficeDeliveryMethodTab.click();
-		scrollingToBottomofAPage();
+		//scrollingToBottomofAPage();
 		//Thread.sleep(3000);
 		//selecting the weight dropdown
 		clickOnTheWeightDropDown.click();
@@ -74,6 +81,10 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 		//Thread.sleep(4000);
 		
 		wait.until(ExpectedConditions.visibilityOf(checkBoxBlock));
+		
+		
+		
+
 		
 	//	clickOnTheWeightDropDown.click();
 	//	selectTheValue0_2kgTab.click();
