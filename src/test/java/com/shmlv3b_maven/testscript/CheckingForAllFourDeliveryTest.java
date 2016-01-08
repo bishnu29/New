@@ -285,7 +285,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 		
 		
-       try{
+       
 
 		logger = report.startTest(Thread.currentThread().getStackTrace()[1].getMethodName());
 		//logger.assignCategory("1st flow - Home or Office Delivery Method ");
@@ -464,9 +464,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	
 	
 	//driver.findElement(By.linkText("PDF flyer")).click();
-	}catch(Throwable t){
-		Assert.fail();
-	}
+	
 	
 		
 		
@@ -478,7 +476,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	@Test(priority=2)
 	public void checkingTheParcelLockerDeliveryMethod() throws InterruptedException{
 		
-		try{
+		
 		
 	//report2 = new ExtentReports("D:\\SeleniumProjectTestReport\\shlm_v3b_testreport\\report2.html",true);
 	//logger = report.startTest("checkingTheParcelLockerDeliveryMethod is started");
@@ -664,11 +662,6 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page  <span class='label success'>Success</span>");
 		
 		
-		}catch(Throwable exceptionDetails){
-			
-			Assert.fail();
-			
-		}
 		
 		
 	}
@@ -676,7 +669,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
     @Test(priority=3)
 	public void checkingTheBpostDeliveryPointMethod() throws InterruptedException{
 		
-	    try{
+	    
     	
 	    logger = report.startTest(Thread.currentThread().getStackTrace()[1].getMethodName());
 	    //logger.assignCategory("3rd flow - Via Bpost delivery point ");
@@ -863,10 +856,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 		*/
 		
-	    }catch(Throwable errorException){
-	    	Assert.fail();
-	    	
-	    }
+	    
 		
 		
 	}
@@ -874,7 +864,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	 //@Test(priority=4)
 	 public void checkingReceiverChooseMethod() throws InterruptedException{
 		
-	 try{
+	 
 		
 		logger = report.startTest(Thread.currentThread().getStackTrace()[1].getMethodName());
 		//logger.assignCategory("4th flow -Via  let the receiver choose his preferred method ");
@@ -919,9 +909,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.PASS, " Checking The Receiver Choose method is passed <span class='label success'>Success</span>");
 		
 		
-	}catch(Throwable obj){
-		Assert.fail();
-	}
+	
 		
 		
 	}
