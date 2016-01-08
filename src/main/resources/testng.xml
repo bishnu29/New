@@ -5,8 +5,7 @@
     <classes>
       <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest"/>
 <!--       <class name="testscript.UserRegistrationProcessTest"/> -->
-      <class name="com.shmlv3b_maven.demo.SecondTest"/>
-      <class name="com.shmlv3b_maven.demo.DemoTest"/>
+      
 <!--       <class name="testscript.DownldAndOpenPDFTest"/> -->
 <!--       <class name="testscript.VerifyTheBarCodeByDownloadingPDFTest"/> -->
 <!--       <class name="testscript.HomePageTest"/> -->
