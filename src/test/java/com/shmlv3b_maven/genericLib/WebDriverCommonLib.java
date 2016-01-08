@@ -162,7 +162,7 @@ public class WebDriverCommonLib {
     	  
     	  
     	  Actions action = new Actions(Driver.driver);
-    	  action.moveToElement(webelement).perform();
+    	  action.moveToElement(webelement).build().perform();
     	  
       }
       
