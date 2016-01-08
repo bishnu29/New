@@ -32,7 +32,7 @@ public class ReportLib {
 					File source = ts.getScreenshotAs(OutputType.FILE);
 					
 					/*     Create a new File    */
-					String  dest = "C:\\Users\\Saroj\\workspace\\BpostSHML_v3b\\screenshots\\"+fileName+".png";
+					String  dest = "C:\\Users\\Saroj\\workspace_maven\\shmlv3b_maven\\screenshots\\"+fileName+".png";
 					File destinationFile  = new File(dest);
 					
 					/*Copy ScreenShot to new File using Apache API */
