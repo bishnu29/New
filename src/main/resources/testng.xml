@@ -5,14 +5,10 @@
     <classes>
       <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest">
           <methods>
-                 <include name =checkingTheHomeOrOfficeDeliveryMethod></include>
+                 <include name ="checkingTheHomeOrOfficeDeliveryMethod"/>
           </methods>
       </class>
-<!--       <class name="testscript.UserRegistrationProcessTest"/> -->
-      
-<!--       <class name="testscript.DownldAndOpenPDFTest"/> -->
-<!--       <class name="testscript.VerifyTheBarCodeByDownloadingPDFTest"/> -->
-<!--       <class name="testscript.HomePageTest"/> -->
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
