@@ -514,7 +514,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
 		
-		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
 		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
 		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
@@ -701,7 +701,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
 
-		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
 		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
 		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
