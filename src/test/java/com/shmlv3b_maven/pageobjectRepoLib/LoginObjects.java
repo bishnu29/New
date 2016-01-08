@@ -76,7 +76,7 @@ public class LoginObjects extends WebDriverCommonLib{
 		//Thread.sleep(3000);
 		
 		logOutLink.click();
-		waitForElementPresentById("logout-ok");
+		//waitForElementPresentById("logout-ok");
 		okButton.click();
 		
 		
