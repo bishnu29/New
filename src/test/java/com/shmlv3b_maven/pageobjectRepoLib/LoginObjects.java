@@ -70,7 +70,7 @@ public class LoginObjects extends WebDriverCommonLib{
 		
 	}
 	
-	public void logOutTheApplication() throws InterruptedException {
+	public void logOutTheApplication() {
 		
 		performMouseHoverOperation(loginName);
 		waitForElementPresentById("logout-ok");
