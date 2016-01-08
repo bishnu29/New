@@ -117,7 +117,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	/*	
 		
-		try{
+		
 			
 		//report = new ExtentReports("D:\\SeleniumProjectTestReport\\shlm_v3b_testreport\\report1.html",true);
 		//logger = report.startTest("checkingTheHomeOrOfficeDeliveryMethod is started");
@@ -273,10 +273,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(receiverName, Constants.name,"The Receiver name is not matching when we cross check under completed tab of My shipment page");
 		logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page <span class='label success'>Success</span>");
 		
-		}catch(Throwable exceptionDetails){
-			
-			Assert.fail();
-		}
+		
 		
 		*/
 		
