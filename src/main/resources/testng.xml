@@ -7,7 +7,7 @@
           <methods>
                  <include name =checkingTheHomeOrOfficeDeliveryMethod></include>
           </methods>
-      
+      </class>
 <!--       <class name="testscript.UserRegistrationProcessTest"/> -->
       
 <!--       <class name="testscript.DownldAndOpenPDFTest"/> -->
