@@ -243,7 +243,7 @@ public class VerifyTheBarCodeByDownloadingPDFTest extends WebDriverCommonLib{
 	}
 
 	@AfterMethod
-	public void configAftrMtd(ITestResult result){
+	public void configAftrMtd(ITestResult result) throws InterruptedException{
 
 		if(result.getStatus() == ITestResult.FAILURE){
 			
