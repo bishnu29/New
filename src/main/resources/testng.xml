@@ -3,7 +3,11 @@
 <suite name="Suite" >
   <test name="Test">
     <classes>
-      <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest"/>
+      <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest">
+          <methods>
+                 <include name =checkingTheHomeOrOfficeDeliveryMethod></include>
+          </methods>
+      
 <!--       <class name="testscript.UserRegistrationProcessTest"/> -->
       
 <!--       <class name="testscript.DownldAndOpenPDFTest"/> -->
