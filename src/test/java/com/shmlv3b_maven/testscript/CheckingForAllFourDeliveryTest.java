@@ -861,7 +861,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	 //@Test(priority=4)
+	 @Test(priority=4)
 	 public void checkingReceiverChooseMethod() throws InterruptedException{
 		
 	 
