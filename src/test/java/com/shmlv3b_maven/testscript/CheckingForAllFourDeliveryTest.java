@@ -309,7 +309,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
 		
-		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();
+		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();
 		homeOrOfficeObjects.performOperationOn_senderPage();
 		logger.log(LogStatus.INFO, "Started filling the fields in the Sender  page . . . ");
 		waitForPageToLoad();
