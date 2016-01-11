@@ -309,7 +309,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting till  required  page loads");
 		
-		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();
 		homeOrOfficeObjects.performOperationOn_senderPage();
 		logger.log(LogStatus.INFO, "Started filling the fields in the Sender  page . . . ");
 		waitForPageToLoad();
@@ -324,8 +324,8 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
 		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified");
 		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
-		*/
 		
+		*/
 		
 		homeOrOfficeObjects.clickOn_termsAndConditionCheckBox();
 		logger.log(LogStatus.INFO, "Clicked Terms and conditions Check box");
@@ -514,7 +514,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
 		
-		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
 		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
 		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
@@ -701,7 +701,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
 
-		//homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
+		homeOrOfficeObjects.clickOn_newSenderAddressRadioButton();/* THIS METHOD WILL BE USED FOR lOGGEDIN USER */
 		logger.log(LogStatus.INFO, "Clicked on New Sender Address Radio Button");
 		
 		logger.log(LogStatus.INFO, "Started filling the Fields on Sender Page");
@@ -931,9 +931,13 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 			
 			//Driver.driver.get("D:\\BpostShmlv3bReport\\report.html");
 			
-				
+			try{	
 			loginObjects.logOutTheApplication();
 			waitForPageToLoad();
+			}catch(Throwable e){
+				loginObjects.logOutTheApplication();
+				waitForPageToLoad();
+			}
 		   
 			
     		
