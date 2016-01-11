@@ -26,7 +26,7 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 	private WebElement sendTab;
 	
 	
-	@FindBy(xpath="//span[text()='Home or office delivery in']")
+	@FindBy(xpath="//span[contains(text(),'Home or office')]")
 	private WebElement homeOrOfficeDeliveryMethodTab;
 	
 	
@@ -74,7 +74,7 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 		
 		homeOrOfficeDeliveryMethodTab.click();
 		//scrollingToBottomofAPage();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		//selecting the weight dropdown
 		clickOnTheWeightDropDown.click();
 		wait.until(ExpectedConditions.visibilityOf(selectTheValue0_2kgTab));

@@ -6,9 +6,12 @@
       <class name="com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest">
         <methods>
           <include name="checkingTheBpostDeliveryPointMethod"/>
+          <include name="checkingReceiverChooseMethod"/>
           <include name="configBfrMtd"/>
           <include name="configBfrCls"/>
           <include name="configAfterMtd"/>
+          <include name="tearDownAfterCls"/>
+          <include name="checkingTheParcelLockerDeliveryMethod"/>
         </methods>
       </class> <!-- com.shmlv3b_maven.testscript.CheckingForAllFourDeliveryTest -->
     </classes>
