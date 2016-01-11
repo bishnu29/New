@@ -114,6 +114,9 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	
 	@Test(priority=1)
 	public void checkingTheHomeOrOfficeDeliveryMethod() throws InterruptedException {
+	
+		
+		
 		
 	/*	
 		
