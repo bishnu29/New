@@ -53,11 +53,11 @@ public class ParcelLockerDeliveryObjects extends WebDriverCommonLib{
 		
 		parcelLockerDeliverMethod.click();
 		scrollingToBottomofAPage();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		clickOnTheWeightDropDown.click();
 		wait.until(ExpectedConditions.visibilityOf(selectTheValue0_2kgTab));
 		selectTheValue0_2kgTab.click();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(checkBoxBlock));
 		
    if(confirmationOfReceiptCheckBox.isSelected()){
