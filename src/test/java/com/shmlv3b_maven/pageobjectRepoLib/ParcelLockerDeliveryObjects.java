@@ -22,7 +22,7 @@ public class ParcelLockerDeliveryObjects extends WebDriverCommonLib{
 	 *  Perform Operation on Create label page
 	 */
 	
-	@FindBy(xpath="//span[text()='Parcel locker delivery']")
+	@FindBy(xpath="//span[contains(text(),'Parcel locker')]")
 	private WebElement parcelLockerDeliverMethod;
 	
 	@FindBy(id="edit_weight_chosen")

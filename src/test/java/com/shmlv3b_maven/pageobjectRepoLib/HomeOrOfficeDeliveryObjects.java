@@ -233,6 +233,7 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 	
 	public void performOperationOn_senderPage(){
 		
+		scrollingThePage();
 		clickOnTitleDropDown.click();
 		selectTheMr_text.click();
 		enterTheFirstName.clear();
