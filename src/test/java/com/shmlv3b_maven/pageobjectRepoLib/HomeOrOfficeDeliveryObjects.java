@@ -231,13 +231,18 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 	}
 	
 	
-	public void performOperationOn_senderPage(){
+	public void performOperationOn_senderPage() throws InterruptedException{
 		
 		scrollingThePage();
+		Thread.sleep(2000);
 		clickOnTitleDropDown.click();
+		
 		selectTheMr_text.click();
+		
 		enterTheFirstName.clear();
 		enterTheFirstName.sendKeys(Constants.firstName);
+		
+		
 		enterLastName.clear();
 		enterLastName.sendKeys(Constants.lastName);
 		fillStreetName.clear();
