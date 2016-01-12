@@ -473,7 +473,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	public void checkingTheParcelLockerDeliveryMethod() throws InterruptedException{
 		
 		
@@ -526,7 +526,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	
 		
-		/*
+		
 		homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
 		String expectedMsg = "Your parcel has been successfully added to your shopping basket";
 		String actualMsg = homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
@@ -534,7 +534,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
 		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified",true);
 		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
-		*/
+		
 		//Thread.sleep(4000);
 		
 		
@@ -666,7 +666,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-    //@Test(priority=3)
+    @Test(priority=3)
 	public void checkingTheBpostDeliveryPointMethod() throws InterruptedException{
 		
 	    
@@ -711,7 +711,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		waitForPageToLoad();
 		logger.log(LogStatus.INFO, "Waiting for the Page to Load");
 		
-		/*
+		
 		homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
 		String expectedMsg = "Your parcel has been successfully added to your shopping basket";
 		String actualMsg = homeOrOfficeObjects.fetchTheSuccessfullMessageOfParcelAdded();
@@ -719,7 +719,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		Assert.assertEquals(expectedMsg, actualMsg,"The Parcel is not added to the cart and the success message is displaying");
 		Reporter.log("The Parcel is Successfully added to the cart and the success message is  verified",true);
 		logger.log(LogStatus.PASS, "The Parcel is Successfully added to the cart and the success message is  verified");
-		*/
+		
 		
 		
 		homeOrOfficeObjects.clickOn_termsAndConditionCheckBox();
@@ -861,7 +861,7 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		
 	}
 	
-	 //@Test(priority=4)
+	 @Test(priority=4)
 	 public void checkingReceiverChooseMethod() throws InterruptedException{
 		
 	 
