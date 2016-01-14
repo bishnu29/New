@@ -74,7 +74,8 @@ public class HomeOrOfficeDeliveryObjects extends WebDriverCommonLib{
 		
 		homeOrOfficeDeliveryMethodTab.click();
 		//scrollingToBottomofAPage();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		waitForPageToLoad();
 		//selecting the weight dropdown
 		clickOnTheWeightDropDown.click();
 		wait.until(ExpectedConditions.visibilityOf(selectTheValue0_2kgTab));
