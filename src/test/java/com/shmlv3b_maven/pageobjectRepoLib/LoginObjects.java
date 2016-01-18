@@ -74,7 +74,7 @@ public class LoginObjects extends WebDriverCommonLib{
 		
 		performMouseHoverOperation(loginName);
 		//waitForElementPresentById("logout-ok");
-		Thread.sleep(2000);
+		waitForPageToLoad();
 		logOutLink.click();
 		
 		okButton.click();
