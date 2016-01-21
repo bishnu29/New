@@ -168,27 +168,6 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 		logger.log(LogStatus.INFO, "Clicked on Pay Button");
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	waitForPageToLoad();
 	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
@@ -208,26 +187,6 @@ public class CheckingForAllFourDeliveryTest extends WebDriverCommonLib{
 	Driver.driver.navigate().refresh();
 	logger.log(LogStatus.INFO, "The page is Refreshing");
 	waitForPageToLoad();
-	
-	/*
-	verifyParcelObjects.clickOnMyShipmenttab();
-	logger.log(LogStatus.INFO, "Clicked on My Shipment Tab");
-	
-	waitForPageToLoad();
-	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
-	
-	verifyParcelObjects.clickOnCompletedTab();
-	logger.log(LogStatus.INFO, "Clicked on the Completed task under My Shipment page ");
-	
-	waitForPageToLoad();
-	logger.log(LogStatus.INFO, "Waiting till  required  page loads");
-	
-	
-	
-	String receiverName = verifyParcelObjects.verifyingTheOrderedParcelByReceiverName();
-	Assert.assertEquals(receiverName, Constants.name,"The Receiver name is not matching when we cross check under completed tab of My shipment page");
-	logger.log(LogStatus.PASS, "The Receiver name is successfully matching when we cross check under completed tab of My shipment page");
-	*/
 	
 	
 	ogonepageObjects.clickOnTheDownloadPDFButton();
